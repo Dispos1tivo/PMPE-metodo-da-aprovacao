@@ -7,9 +7,17 @@
 <meta name="theme-color" content="#09090B">
 <style>html,body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Combo da Aprovação PMPE 2026</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Saira+Condensed:wght@700;800;900&family=Saira:wght@600;700&display=swap">
+<link rel="preload" href="assets/fonts/saira-condensed-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  /* fontes servidas do próprio domínio (subconjunto latin do Google Fonts) */
+  @font-face{font-family:"Inter";font-style:normal;font-weight:400 700;font-display:swap;src:url(assets/fonts/inter.woff2) format("woff2")}
+  @font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:500 700;font-display:swap;src:url(assets/fonts/jetbrains-mono.woff2) format("woff2")}
+  @font-face{font-family:"Saira";font-style:normal;font-weight:600 700;font-display:swap;src:url(assets/fonts/saira.woff2) format("woff2")}
+  @font-face{font-family:"Saira Condensed";font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/saira-condensed-700.woff2) format("woff2")}
+  @font-face{font-family:"Saira Condensed";font-style:normal;font-weight:800;font-display:swap;src:url(assets/fonts/saira-condensed-800.woff2) format("woff2")}
+  @font-face{font-family:"Saira Condensed";font-style:normal;font-weight:900;font-display:swap;src:url(assets/fonts/saira-condensed-900.woff2) format("woff2")}
+</style>
 <style>
   :root{
     color-scheme:dark;
@@ -703,18 +711,18 @@
   <div class="in narrow" style="max-width:900px">
     <h2 class="h2 center rv">Veja o que mudou na rotina de quem já estuda com o Combo</h2>
     <div class="audio rv">
-      <span class="avatar photo"><img src="assets/deise.jpg" alt="Foto de Deise" width="48" height="48"></span>
+      <span class="avatar photo"><img src="assets/deise-144.jpg" alt="Foto de Deise" width="48" height="48" loading="lazy" decoding="async"></span>
       <span class="who-a"><b>Deise</b><span class="sub-a">Depoimento em áudio</span></span>
       <button class="play" id="play" aria-label="Ouvir o depoimento da Deise"><svg><use href="#i-play"/></svg></button>
       <div class="wave" id="wave" role="slider" aria-label="Posição do áudio" aria-valuemin="0" aria-valuemax="32" aria-valuenow="0" tabindex="0"></div>
       <span class="dur" id="dur">0:32</span>
-      <audio id="aud" src="assets/deise.ogg" preload="metadata"></audio>
+      <audio id="aud" src="assets/deise.ogg" preload="none"></audio>
     </div>
     <div class="tgrid">
       <div class="tcard rv">
         <div class="stars" role="img" aria-label="5 estrelas"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
         <p>Eu sempre começava estudar e parava por falta de organização. Com o material organizado e o edital verticalizado, consegui criar uma rotina e manter a constância nos estudos. Muito bom o material.</p>
-        <div class="who"><span class="avatar photo"><img src="assets/maykon.png" alt="Foto de Maykon Souza" width="40" height="40" loading="lazy"></span><b>Maykon Souza</b></div>
+        <div class="who"><span class="avatar photo"><img src="assets/maykon-120.png" alt="Foto de Maykon Souza" width="40" height="40" loading="lazy" decoding="async"></span><b>Maykon Souza</b></div>
       </div>
       <div class="tcard rv">
         <div class="stars" role="img" aria-label="5 estrelas"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
@@ -868,7 +876,7 @@
           <div class="seal"><span class="si"><svg><use href="#i-lock"/></svg></span><span>Privacidade<b>Protegida</b></span></div>
         </div>
         <div class="paylogos">
-          <div class="paycrop" role="img" aria-label="Pague com segurança: Pix, Visa, Mastercard, PayPal, Boleto, Hipercard e American Express"><img src="assets/selos-pagamento.webp" width="1812" height="868" alt=""></div>
+          <div class="paycrop" role="img" aria-label="Pague com segurança: Pix, Visa, Mastercard, PayPal, Boleto, Hipercard e American Express"><img src="assets/selos-pagamento.webp" width="1812" height="868" alt="" loading="lazy" decoding="async"></div>
         </div>
       </div>
     </div>
