@@ -255,6 +255,12 @@
   .qcard .qm{font:900 64px/.6 var(--f-display);color:var(--y-500);height:28px}
   .qcard .qtxt{margin:0;font-size:16px;line-height:1.6;color:var(--text-2)}
   .qcard .who{font:600 15px/1.3 var(--f-body);border-top:1px solid var(--line);padding-top:14px}
+  .qcard .who span{display:block;margin-top:3px;font:400 13px/1.4 var(--f-body);color:var(--text-3)}
+  /* depoimento em print do WhatsApp: a imagem ocupa o card de ponta a ponta */
+  .qcard.shot{padding:0;gap:0;grid-template-rows:1fr auto;overflow:hidden}
+  .qcard.shot picture{display:block;background:#0B141A}
+  .qcard.shot img{display:block;width:100%;height:auto}
+  .qcard.shot .who{padding:14px 26px 20px}
   .car-nav{display:flex;justify-content:center;align-items:center;gap:16px;margin-top:26px}
   .arrow{width:44px;height:44px;border-radius:8px;border:1px solid var(--line-2);background:transparent;color:var(--text);display:grid;place-items:center;cursor:pointer;transition:border-color .2s,background .2s}
   .arrow:hover{border-color:var(--y-a30);background:var(--y-a10)}
@@ -818,6 +824,7 @@
 <section id="b12" aria-label="Depoimentos de alunos">
   <div class="in">
     <div class="car" id="car">
+      <figure class="qcard shot" style="margin:0"><picture><source media="(max-width:760px)" srcset="assets/depoimento-whatsapp-m.jpg" width="738" height="699"><img src="assets/depoimento-whatsapp.jpg" alt="Print de conversa no WhatsApp. Andrade escreve: Adquiri sim, muito obrigado!! Não li muito ainda, mas dá pra ver que foi muito bem feito. Parabéns." width="650" height="374" loading="lazy" decoding="async"></picture><figcaption class="who">Andrade<span>Aluno do Combo PMMG, mesmo método</span></figcaption></figure>
       <figure class="qcard" style="margin:0"><span class="qm" aria-hidden="true">“</span><blockquote class="qtxt">Sempre achei que precisava passar o dia inteiro estudando para evoluir. Depois que organizei meus estudos com esse material, comecei a aproveitar muito melhor o tempo que tinha. Hoje consigo estudar com muito mais foco e sem aquela sensação de estar sempre atrasada.</blockquote><figcaption class="who">Ellen Souza</figcaption></figure>
       <figure class="qcard" style="margin:0"><span class="qm" aria-hidden="true">“</span><blockquote class="qtxt">Minha maior dificuldade era manter a disciplina. Eu estudava dois dias, parava três e recomeçava toda semana. O material me deu uma direção e finalmente consegui criar uma rotina de verdade.</blockquote><figcaption class="who">Matheus Ribeiro</figcaption></figure>
       <figure class="qcard" style="margin:0"><span class="qm" aria-hidden="true">“</span><blockquote class="qtxt">Eu estava desanimada porque estudava há meses e parecia que não saía do lugar. Quando comecei a seguir uma preparação mais organizada, passei a estudar com mais confiança e percebi que meu rendimento melhorou bastante.</blockquote><figcaption class="who">Mariana Lima</figcaption></figure>
