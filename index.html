@@ -546,6 +546,28 @@
   @media (max-width:900px){.facts,.exam-g{grid-template-columns:repeat(2,minmax(0,1fr))}}
   @media (max-width:520px){.facts{gap:10px}.exam-g{grid-template-columns:1fr}.fact{padding:14px 14px 16px}.fact b{font-size:clamp(12px,4vw,18px)}.fact .fk{font-size:9px;letter-spacing:.08em}.fact .fs{font-size:12px}.exam{padding:16px}}
   .marker{margin-left:.15em}.marker svg{left:-4%;width:108%}@media (max-width:340px){.btxt h3{font-size:16px}}
+  /* capa nova (MDA Concursos): moldura da capa dos PDFs, com o desenho do produto no meio */
+  .cv2 .cv-in{background:linear-gradient(100deg,#18181b 0%,#0f0f11 55%,#0b0b0c 100%);display:grid;grid-template-rows:auto minmax(0,1fr) auto auto;justify-items:start;text-align:left;padding:11cqw 8.8cqw 5.4cqw 9.3cqw}
+  .cv2 .cv-in::before,.cv2 .cv-in::after{display:none}
+  .cv2.spiral .cv-in{padding-left:13cqw}
+  .cv2.spiral .cv-in::before{display:block}
+  .cv2 .cvlg{width:37.8cqw;position:relative;z-index:1}
+  .cv2 .cvlg svg,.cv2 .cvwm svg{display:block;width:100%;height:auto}
+  .cv2 .cvwm{position:absolute;left:31.5cqw;top:41.6cqw;width:95.7cqw;z-index:0;pointer-events:none}
+  .cv2 .art{align-self:center;justify-self:center;width:86%;padding-block:5cqw 4cqw}
+  .cv2 .cvb{position:relative;z-index:1;display:flex;flex-direction:column;align-items:flex-start;margin-bottom:6cqw;width:100%}
+  .cv2 .cvk{font:600 1.75cqw/1.3 var(--f-body);letter-spacing:.32em;text-transform:uppercase;color:var(--y-500);margin-bottom:2.8cqw}
+  .cv2 .ttl{margin:0;font:900 var(--ts2,8cqw)/1.04 var(--f-display);text-transform:uppercase;letter-spacing:-.005em;color:#fff;max-width:82cqw}
+  .cv2 .ttl .y{color:inherit}
+  .cv2 .ttl .big{display:block;font-size:1em;line-height:inherit;color:inherit}
+  .cv2 .cvbar{display:block;width:10.8cqw;height:.63cqw;background:var(--y-500);margin:3.4cqw 0 3cqw}
+  .cv2 .sub{margin:0;font:500 3.4cqw/1.3 var(--f-body);color:#ececef;max-width:72cqw;text-align:left}
+  .cv2 .cvf{border-top:0;padding-top:0;font:600 1.6cqw/1 var(--f-body);letter-spacing:.32em;color:#7d7d86}
+  .cv2 .cvf b{color:#7d7d86;font-weight:600}
+  .bk .spine span{font:600 clamp(5px,.62vw,9px)/1 var(--f-body);letter-spacing:.2em}
+  .hero-m .seal b{font:900 14px/1 var(--f-display)}
+  /* livro 3D: a capa e o brilho um pouco à frente da lombada (sem isso o Chrome desenha uma faixa escura sobre o lado esquerdo da capa) */
+  .bk .cv{transform:translateZ(1px)}.bk .glare{transform:translateZ(2px)}
 </style>
 <script>
   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
@@ -593,29 +615,6 @@
     <symbol id="i-star-badge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5z"/><path d="m12 8 1.2 2.5 2.8.4-2 2 .5 2.8L12 14.4 9.5 15.7l.5-2.8-2-2 2.8-.4z"/></symbol>
   </defs>
 </svg>
-
-<template id="t-emblem">
-  <svg viewBox="0 0 480 480" aria-hidden="true">
-    <circle class="e-ring" cx="240" cy="240" r="212" stroke-width="3"/>
-    <circle class="e-ring" cx="240" cy="240" r="200" stroke-width="1.5" opacity=".35"/>
-    <g class="e-ac">
-      <polygon points="26,112 172,112 172,132 44,132"/><polygon points="50,142 172,142 172,162 68,162"/><polygon points="74,172 172,172 172,192 92,192"/>
-      <polygon points="454,112 308,112 308,132 436,132"/><polygon points="430,142 308,142 308,162 412,162"/><polygon points="406,172 308,172 308,192 388,192"/>
-    </g>
-    <path class="e-bg e-sh" stroke-width="5" d="M240 50 316 76V146c0 48-32 78-76 100-44-22-76-52-76-100V76z"/>
-    <path fill="none" class="e-sh" stroke-width="1.5" opacity=".4" d="M240 68 300 88V146c0 38-26 62-60 80-34-18-60-42-60-80V88z"/>
-    <use href="#st" x="198" y="104" width="84" height="84" class="e-ac"/>
-    <g class="e-ac"><rect x="66" y="252" width="86" height="3"/><rect x="328" y="252" width="86" height="3"/></g>
-    <g transform="translate(37 0) skewX(-8)"><text class="logo-txt e-fg" x="240" y="268" text-anchor="middle" font-size="42" font-weight="800" letter-spacing="1">Método da</text></g>
-    <g transform="translate(44 0) skewX(-8)"><text class="logo-txt e-hl e-ko" x="240" y="358" text-anchor="middle" font-size="108" font-weight="900" stroke-width="14" textLength="404" lengthAdjust="spacingAndGlyphs">Aprovação</text></g>
-    <path class="e-ac" d="M58 378Q240 356 422 378Q240 368 58 378z"/>
-    <use href="#st" x="193" y="387" width="22" height="22" class="e-ac"/>
-    <use href="#st" x="224" y="380" width="32" height="32" class="e-ac"/>
-    <use href="#st" x="265" y="387" width="22" height="22" class="e-ac"/>
-    <polyline class="e-chev" stroke-width="8" points="206,416 240,431 274,416"/>
-    <polyline class="e-chev" stroke-width="8" points="206,430 240,445 274,430"/>
-  </svg>
-</template>
 
 <header class="topbar"><div class="in" id="toplogo"></div></header>
 
@@ -987,7 +986,7 @@
   if (CHECKOUT_URL) document.querySelectorAll('[data-checkout]').forEach(a => a.href = CHECKOUT_URL);
 
   /* ===== capas dos produtos (mesmas da apresentação aprovada) ===== */
-  const EMB = document.getElementById('t-emblem').innerHTML;
+  const LOGO2 = document.querySelector('footer .logo-h').outerHTML, SIMB2 = "<svg aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"6.6 -2 86.8 110.5\"><path fill=\"rgba(255,255,255,.045)\" fill-rule=\"evenodd\" d=\"M6.6 0L19 0L50 31L81 0L93.4 0L93.4 65.1L50 108.5L6.6 65.1ZM15.4 8.8L15.4 61.5L50 96.1L84.6 61.5L84.6 8.8L50 43.4ZM22 37.1L50 65.1L78 37.1L78 24.7L50 52.7L22 24.7ZM22 58.8L50 86.8L78 58.8L78 46.4L50 74.4L22 46.4Z\"/><path fill=\"rgba(255,255,255,.045)\" d=\"M50 -2L52.8 4.8L60.1 5.3L54.5 10.1L56.2 17.2L50 13.4L43.8 17.2L45.5 10.1L39.9 5.3L47.2 4.8Z\"/></svg>";
   const ck = '<svg viewBox="0 0 24 24"><use href="#ck"/></svg>';
   const ART = {
     star:`<svg viewBox="0 0 240 150" preserveAspectRatio="xMidYMid meet">
@@ -1035,24 +1034,23 @@
     </svg>`
   };
   const P = [
-    {n:'Produto 1',name:'Apostilas do Edital Completo',ts:'10cqw',tag:'Apostilas · 5 volumes',ttl:'Apostilas do<br><span class="y">Edital Completo</span>',sub:'Todo o conteúdo organizado conforme o edital oficial',art:ART.star,spine:'Apostilas do Edital Completo'},
-    {n:'Produto 2',name:'Simulados Padrão AOCP',ts:'10.5cqw',tag:'Simulados · 5 volumes',ttl:'Simulados<br><span class="y">Padrão AOCP</span>',sub:'Com gabarito comentado',
+    {n:'Produto 1',name:'Apostilas do Edital Completo',ts:'10cqw',t2:'6.6cqw',tag:'Apostilas · 5 volumes',ttl:'Apostilas do<br><span class="y">Edital Completo</span>',sub:'Todo o conteúdo organizado conforme o edital oficial',art:ART.star,spine:'Apostilas do Edital Completo'},
+    {n:'Produto 2',name:'Simulados Padrão AOCP',ts:'10.5cqw',t2:'8.4cqw',tag:'Simulados · 5 volumes',ttl:'Simulados<br><span class="y">Padrão AOCP</span>',sub:'Com gabarito comentado',
      art:`<div class="duo">${ART.sheet}<ul class="lst">${['Padrão oficial AOCP','Questões inéditas','Soluções detalhadas'].map(t=>`<li><i>${ck}</i>${t}</li>`).join('')}</ul></div>`,spine:'Simulados Padrão AOCP'},
-    {n:'Bônus 1',name:'Edital Verticalizado',ts:'10.5cqw',tag:'Bônus 01',ttl:'Edital<br><span class="y">Verticalizado</span>',sub:'Teoria • Revisão • Questões',art:ART.doc,spine:'Edital Verticalizado'},
-    {n:'Bônus 2',name:'Planner de 30 Dias',ts:'10.5cqw',tag:'Bônus 02',spiral:true,ttl:'Planner de<span class="big">30 dias</span>',sub:'',art:ART.grid30,spine:'Planner de 30 Dias'},
-    {n:'Bônus 3',name:'Planejamento de Estudos',ts:'10cqw',tag:'Bônus 03',ttl:'Planejamento<br><span class="y">de Estudos</span>',sub:'Cronograma semanal',art:ART.week,spine:'Planejamento de Estudos'},
-    {n:'Bônus 4',name:'Prompts da Aprovação',ts:'10.5cqw',tag:'Bônus 04',ttl:'Prompts da<br><span class="y">Aprovação</span>',sub:'Estude com IA sem se perder',
+    {n:'Bônus 1',name:'Edital Verticalizado',ts:'10.5cqw',t2:'7.55cqw',tag:'Bônus 01',ttl:'Edital<br><span class="y">Verticalizado</span>',sub:'Teoria • Revisão • Questões',art:ART.doc,spine:'Edital Verticalizado'},
+    {n:'Bônus 2',name:'Planner de 30 Dias',ts:'10.5cqw',t2:'8.95cqw',tag:'Bônus 02',spiral:true,ttl:'Planner de<span class="big">30 dias</span>',sub:'',art:ART.grid30,spine:'Planner de 30 Dias'},
+    {n:'Bônus 3',name:'Planejamento de Estudos',ts:'10cqw',t2:'7.6cqw',tag:'Bônus 03',ttl:'Planejamento<br><span class="y">de Estudos</span>',sub:'Cronograma semanal',art:ART.week,spine:'Planejamento de Estudos'},
+    {n:'Bônus 4',name:'Prompts da Aprovação',ts:'10.5cqw',t2:'9.3cqw',tag:'Bônus 04',ttl:'Prompts da<br><span class="y">Aprovação</span>',sub:'Estude com IA sem se perder',
      art:`<div class="chat"><div class="bar"><i></i><i></i><i></i></div>
        <div class="crow"><span><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>Plano de Estudos</div>
        <div class="crow"><span><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></span>Revisão</div>
        <div class="crow"><span><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.7M12 16h.01"/></svg></span>Resolução de Dúvidas</div></div>`,spine:'Prompts da Aprovação'},
-    {n:'Bônus 5',name:'Plano de Treino para o TAF',ts:'9.4cqw',tag:'Bônus 05 · 3 níveis',ttl:'Plano de Treino<br>para o <span class="y">TAF</span>',sub:'',
+    {n:'Bônus 5',name:'Plano de Treino para o TAF',ts:'9.4cqw',t2:'6.85cqw',tag:'Bônus 05 · 3 níveis',ttl:'Plano de Treino<br>para o <span class="y">TAF</span>',sub:'',
      art:`<div style="display:grid;gap:1cqw;width:100%;height:100%;grid-template-rows:auto minmax(0,1fr) auto"><div class="lv"><span>Iniciante</span><span>Intermediário</span><span>Avançado</span></div>${ART.chart}<p class="note">Evolução semana a semana para conquistar os índices do edital.</p></div>`,spine:'Plano de Treino TAF'}
   ];
-  const cover = p => `<div class="cv${p.spiral?' spiral':''}" role="img" aria-label="Capa: ${p.name}"><div class="cv-in" style="--ts:${p.ts}" aria-hidden="true">
-      <span class="tick t1"></span><span class="tick t2"></span><span class="tick t3"></span><span class="tick t4"></span>
-      <div class="emb">${EMB}</div><span class="tag">${p.tag}</span><div class="ttl">${p.ttl}</div>
-      ${p.sub?`<p class="sub">${p.sub}</p>`:'<span></span>'}<div class="art">${p.art}</div>
+  const cover = p => `<div class="cv cv2${p.spiral?' spiral':''}" role="img" aria-label="Capa: ${p.name}"><div class="cv-in" aria-hidden="true">
+      <div class="cvwm">${SIMB2}</div><div class="cvlg">${LOGO2}</div><div class="art">${p.art}</div>
+      <div class="cvb"><span class="cvk">${p.tag}</span><div class="ttl" style="--ts2:${p.t2}">${p.ttl}</div><i class="cvbar"></i>${p.sub?`<p class="sub">${p.sub}</p>`:''}</div>
       <div class="cvf"><span>Combo da Aprovação</span><b>PMPE 2027</b></div></div></div>`;
   const book = (p,ry) => `<div class="b3d" style="--ry:${ry}deg"><div class="bk"><div class="spine"><span>${p.spine}</span></div>${cover(p)}<span class="glare"></span></div><div class="floor"></div></div>`;
 
