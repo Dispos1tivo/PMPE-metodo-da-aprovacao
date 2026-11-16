@@ -281,6 +281,9 @@
   .qcard.shot{padding:0;gap:0;grid-template-rows:1fr auto;overflow:hidden}
   .qcard.shot picture{display:flex;align-items:center;background:#0B141A}
   .qcard.shot.ig picture{background:#fff}
+  /* foto (story): preenche o card sem mudar a altura do carrossel */
+  .qcard.shot.foto picture{position:relative;display:block}
+  .qcard.shot.foto img{position:absolute;inset:0;height:100%;object-fit:cover;object-position:50% 0}
   .qcard.shot img{display:block;width:100%;height:auto}
   .qcard.shot .who{padding:14px 26px 20px}
   .car-nav{display:flex;justify-content:center;align-items:center;gap:16px;margin-top:26px}
@@ -865,6 +868,7 @@
   <div class="in">
     <div class="car" id="car">
       <figure class="qcard shot" style="margin:0"><picture><img src="assets/depoimentos/victor.jpg" alt="Print de conversa no WhatsApp. Victor escreve: Os seus PDF são incríveis, viu. É muito bem explicado e dá pra aprender tudo perfeitamente." width="738" height="332" loading="lazy" decoding="async"></picture><figcaption class="who">Victor<span>Aluno do Combo PCMG, mesmo método</span></figcaption></figure>
+      <figure class="qcard shot foto" style="margin:0"><picture><img src="assets/depoimentos/victor-estudando.jpg" alt="Foto do story do Victor: notebook aberto na apostila em PDF, à noite, com o caderno de anotações e canetas ao lado." width="738" height="650" loading="lazy" decoding="async"></picture><figcaption class="who">Victor estudando<span>Story dele com o Combo PCMG, mesmo método</span></figcaption></figure>
       <figure class="qcard shot ig" style="margin:0"><picture><img src="assets/depoimentos/guilherme.jpg" alt="Print de conversa no Instagram. Guilherme escreve: 1 simulado de vocês já fiz, já gostei deles, bem direcionado. Comprei a apostila de vocês, muito boa ela." width="738" height="284" loading="lazy" decoding="async"></picture><figcaption class="who">Guilherme<span>Aluno do Combo da Aprovação</span></figcaption></figure>
       <figure class="qcard shot" style="margin:0"><picture><source media="(max-width:760px)" srcset="assets/depoimento-whatsapp-m.jpg" width="738" height="699"><img src="assets/depoimento-whatsapp.jpg" alt="Print de conversa no WhatsApp. Andrade escreve: Adquiri sim, muito obrigado!! Não li muito ainda, mas dá pra ver que foi muito bem feito. Parabéns." width="650" height="374" loading="lazy" decoding="async"></picture><figcaption class="who">Andrade<span>Aluno do Combo PMMG, mesmo método</span></figcaption></figure>
       <figure class="qcard" style="margin:0"><span class="qm" aria-hidden="true">“</span><blockquote class="qtxt">Sempre achei que precisava passar o dia inteiro estudando para evoluir. Depois que organizei meus estudos com esse material, comecei a aproveitar muito melhor o tempo que tinha. Hoje consigo estudar com muito mais foco e sem aquela sensação de estar sempre atrasada.</blockquote><figcaption class="who">Ellen Souza</figcaption></figure>
