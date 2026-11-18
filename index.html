@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover">
 <meta name="description" content="O Combo da Aprovação PMPE 2027 reúne 5 apostilas do edital completo, 5 simulados no padrão AOCP com gabarito comentado e o passo a passo do que estudar todo dia.">
 <meta name="theme-color" content="#09090B">
 <style>html,body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
@@ -43,7 +43,9 @@
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
   html,body{background:var(--bg)}
-  body{color:var(--text);font:400 17px/1.65 var(--f-body);-webkit-font-smoothing:antialiased;overflow-x:hidden;
+  /* Celular: nada passa da largura da tela e a página não afasta nem amplia */
+  html{overflow-x:hidden;touch-action:pan-x pan-y;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+  body{color:var(--text);font:400 17px/1.65 var(--f-body);-webkit-font-smoothing:antialiased;overflow-x:clip;
     background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:44px 44px}
   h1,h2,h3,h4{margin:0;text-wrap:balance}
   p{margin:0}
