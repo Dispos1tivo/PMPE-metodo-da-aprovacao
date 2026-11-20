@@ -1,7 +1,8 @@
 /* Aviso de cookies (LGPD) da MDA Concursos.
-   O Pixel da Meta e a UTMify só carregam depois que a pessoa toca em "Aceitar".
+   Desde 20/11/2026 (decisão dele): o Pixel da Meta e a UTMify carregam ao abrir a página, e o aviso informa.
+   Quem toca em "Recusar" fica sem eles: os cookies da Meta são apagados e as próximas visitas não carregam nada.
    A estatística da Vercel continua sempre ligada: ela não usa cookies nem identifica ninguém.
-   Quem recusar ainda leva para o checkout as UTMs que já estão no endereço (sem cookie nenhum).
+   Quem recusou ainda leva para o checkout as UTMs que já estão no endereço (sem cookie nenhum).
    Uso: <script src="assets/cookies.js" data-pixel="ID_DO_PIXEL" defer></script>  (data-utmify="nao" para não carregar a UTMify)
    Qualquer link ou botão com o atributo data-cookies reabre o aviso.
    O mesmo arquivo vai em todas as páginas: mudou aqui, copie para as outras. */
@@ -80,8 +81,8 @@
       caixa.className = 'mda-ck';
       caixa.setAttribute('role', 'dialog');
       caixa.setAttribute('aria-label', 'Aviso de cookies');
-      caixa.innerHTML = '<p><b>Cookies:</b> com o seu aceite, usamos cookies para saber de onde vêm as visitas e melhorar os nossos anúncios. ' +
-        'Você pode mudar de ideia quando quiser pelo link "Cookies" no fim da página. <a href="' + PRIVACIDADE + '" target="_blank" rel="noopener">Saiba mais</a></p>' +
+      caixa.innerHTML = '<p><b>Cookies:</b> usamos cookies para saber de onde vêm as visitas e melhorar os nossos anúncios. ' +
+        'Se preferir, toque em Recusar. Você pode mudar de ideia quando quiser pelo link "Cookies" no fim da página. <a href="' + PRIVACIDADE + '" target="_blank" rel="noopener">Saiba mais</a></p>' +
         '<div class="bt"><button type="button" class="no">Recusar</button><button type="button" class="ok">Aceitar</button></div>';
       caixa.querySelector('.ok').addEventListener('click', function () { escolher('sim'); });
       caixa.querySelector('.no').addEventListener('click', function () { escolher('nao'); });
@@ -107,8 +108,9 @@
       if (alvo) { e.preventDefault(); mostrar(); }
     });
     var v = ler();
-    if (v === 'sim') carregarMedicao();
-    else { repassarUtms(); if (v !== 'nao') mostrar(); }
+    if (v === 'nao') { repassarUtms(); return; }
+    carregarMedicao();
+    if (v !== 'sim') mostrar();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', iniciar);
   else iniciar();
