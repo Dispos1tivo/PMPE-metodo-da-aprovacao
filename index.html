@@ -578,6 +578,22 @@
   .hero-m .seal b{font:900 14px/1 var(--f-display)}
   /* livro 3D: a capa e o brilho um pouco à frente da lombada (sem isso o Chrome desenha uma faixa escura sobre o lado esquerdo da capa) */
   .bk .cv{transform:translateZ(1px)}.bk .glare{transform:translateZ(2px)}
+
+  /*titulos-fixos*/
+  .qc,.qp{display:none}
+  @media (max-width:760px){
+    .fx-c{white-space:nowrap;font-size:min(calc(var(--fc)*1px),calc((100vw - 2*var(--gut))*var(--kc)))!important}
+    .fx-c .qc{display:inline}
+  }
+  @media (min-width:761px){
+    .fx-p{white-space:nowrap;font-size:min(calc(var(--fp)*1px),calc((min(1140px,100vw) - 2*var(--gut))*var(--kp)))!important}
+    .fx-p .qp{display:inline}
+    .fx-p.fx-m{max-width:none!important;margin-inline:calc(50% - 50vw)!important;text-align:center}
+  }
+  @media (min-width:1024px){
+    .fx-p.fx-h{font-size:min(calc(var(--fp)*1px),calc((min(1240px,100vw) - 2*var(--gut) - 40px)*var(--kh)))!important}
+  }
+  /*fim-titulos-fixos*/
 </style>
 <script>
   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
@@ -628,7 +644,7 @@
   <div class="in hero">
     <div class="hero-txt rv">
       <span class="tarja">EDITAL PUBLICADO - PMPE - 1.250 VAGAS PARA SOLDADO</span>
-      <h1>Tudo que você precisa para <mark>passar na prova da PMPE 2027</mark>, do edital ao gabarito comentado.</h1>
+      <h1 class="fx-c fx-p fx-m" style="--fc:28;--kc:0.07821;--fp:41;--kp:0.03931">Tudo que você <br class="qc">precisa para <br class="qc"><br class="qp"><mark>passar na prova <br class="qc">da PMPE 2027</mark>, <br class="qc"><br class="qp">do edital <br class="qc">ao gabarito <br class="qc">comentado.</h1>
       <p class="lead">O Combo da Aprovação PMPE 2027 reúne 5 apostilas do edital completo, 5 simulados no padrão Instituto AOCP com gabarito comentado e o passo a passo para você saber exatamente o que estudar todo dia, até o nome sair na lista de aprovados.</p>
       <a class="btn" href="#oferta" data-cta>Quero estudar com direção</a>
     </div>
@@ -661,7 +677,7 @@
 <!-- 02 DORES -->
 <section id="b2">
   <div class="in">
-    <h2 class="h2 center narrow rv">Se você chegou até aqui, provavelmente já se pegou pensando em <span class="y">alguma dessas</span>:</h2>
+    <h2 class="h2 center narrow rv fx-c fx-p fx-m" style="--fc:25;--kc:0.06983;--fp:43;--kp:0.04583">Se você chegou <br class="qc">até aqui, <br class="qc"><br class="qp">provavelmente já <br class="qc">se pegou <br class="qp">pensando <br class="qc">em <span class="y">alguma dessas</span>:</h2>
     <div class="thoughts">
       <div class="thought rv">Estudo, estudo, e na hora da prova parece que não sei nada.</div>
       <div class="thought rv">Baixei um monte de PDF, comprei apostila de vários lugares e não terminei nenhuma.</div>
@@ -674,7 +690,7 @@
 <!-- 03 VIRADA -->
 <section id="b3" class="band">
   <div class="in band-stack">
-    <h2 class="h2 rv">Presta atenção nisso: o problema quase nunca é <span class="marker" data-draw>você<svg viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M178 14C140 2 60 4 22 20 -4 32 6 62 50 70c46 8 118 4 142-18 16-16-4-34-40-40"/></svg></span>.</h2>
+    <h2 class="h2 rv fx-c fx-p fx-m" style="--fc:25;--kc:0.06983;--fp:43;--kp:0.04077">Presta atenção <br class="qc">nisso: <br class="qp">o problema <br class="qc">quase nunca <br class="qc">é <span class="marker" data-draw>você<svg viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M178 14C140 2 60 4 22 20 -4 32 6 62 50 70c46 8 118 4 142-18 16-16-4-34-40-40"/></svg></span>.</h2>
     <p class="rv">A maioria dos candidatos da PMPE que reprova não reprova por preguiça. Reprova estudando muito, só que estudando no escuro, sem saber o que priorizar, sem medir se está evoluindo e sem uma rotina que se sustente até o dia da prova.</p>
     <p class="fecho rv">Esse é o ponto que separa quem passa de quem fica pra trás. E é exatamente isso que o Combo resolve.</p>
   </div>
@@ -684,7 +700,7 @@
 <section id="b4">
   <div class="in narrow">
     <div class="stack-c">
-      <h2 class="h2 rv">O verdadeiro motivo de <span class="y">tanta gente reprovar</span></h2>
+      <h2 class="h2 rv fx-p fx-m" style="--fp:43;--kp:0.05310">O verdadeiro motivo <br class="qp">de <span class="y">tanta gente reprovar</span></h2>
       <p class="rv">Conteúdo é o que mais tem. Você acha edital, resumo, vídeo e apostila de graça em todo canto. E mesmo assim a taxa de reprovação é enorme.</p>
       <p class="rv" style="font:700 20px/1.4 var(--f-head);color:var(--text)">Por quê? Porque conteúdo espalhado não é plano de estudo.</p>
       <p class="rv">Quando você junta material de dez lugares diferentes, acontece o seguinte:</p>
@@ -723,7 +739,7 @@
       </div>
     </div>
     <div class="copy rv">
-      <h2 class="h2">A solução não é estudar mais. <span class="y">É estudar com direção</span>.</h2>
+      <h2 class="h2 fx-c fx-p" style="--fc:25;--kc:0.06983;--fp:41;--kp:0.03911">A solução não é <br class="qc"><br class="qp">estudar mais. <br class="qc"><br class="qp"><span class="y">É estudar <br class="qc"><br class="qp">com direção</span>.</h2>
       <p>O Combo da Aprovação foi montado para ser o seu GPS até a farda: o edital inteiro organizado na ordem certa, um jeito de medir sua evolução a cada semana e uma rotina que te puxa todo dia. Você para de decidir “o que estudo hoje?” e passa a seguir um caminho traçado por quem já passou num concurso policial.</p>
       <a class="btn" href="#oferta" data-cta>Quero parar de estudar no escuro</a>
     </div>
@@ -733,7 +749,7 @@
 <!-- 06 COMPARATIVO -->
 <section id="b6">
   <div class="in">
-    <h2 class="h2 center rv">Estudar sozinho X <span class="y">Estudar com o combo</span></h2>
+    <h2 class="h2 center rv fx-c" style="--fc:25;--kc:0.06983">Estudar sozinho <br class="qc">X <br class="qc"><span class="y">Estudar <br class="qc">com o combo</span></h2>
     <div class="cmp rv" role="table" aria-label="Comparativo">
       <div class="cmp-row cmp-head" role="row"><div role="columnheader">Estudando por conta, no escuro</div><div role="columnheader">Com o Combo da Aprovação</div></div>
       <div class="cmp-row" role="row"><div role="cell"><span class="xmark"><svg><use href="#i-x"/></svg></span>Junta PDF de tudo quanto é canto e não termina nenhum</div><div role="cell"><span class="vmark"><svg><use href="#i-check"/></svg></span>Edital inteiro organizado em 5 apostilas, na sequência certa</div></div>
@@ -748,7 +764,7 @@
 <!-- 07 DEPOIMENTOS + ÁUDIO -->
 <section id="b7">
   <div class="in narrow" style="max-width:900px">
-    <h2 class="h2 center rv">Veja o que mudou na rotina de quem já estuda com o Combo</h2>
+    <h2 class="h2 center rv fx-c fx-p fx-m" style="--fc:25;--kc:0.06983;--fp:43;--kp:0.04267">Veja o que mudou <br class="qc">na rotina <br class="qc"><br class="qp">de quem já estuda <br class="qc">com o Combo</h2>
     <figure class="aprov rv">
       <img class="aprov-foto" src="assets/aprovada-ppmg.jpg" alt="Ana Clara Aguiar segurando a bandeira de aprovados no TAF da Polícia Penal MG" width="683" height="792" loading="lazy" decoding="async">
       <div class="aprov-txt">
@@ -785,7 +801,7 @@
   <div class="glow" style="width:520px;height:520px;top:20%;left:-220px;background:rgba(246,193,17,.07)"></div>
   <div class="in">
     <div class="stack-c narrow">
-      <h2 class="h2 rv">Por que o Combo funciona: <span class="y">o Método FARDA</span></h2>
+      <h2 class="h2 rv fx-c fx-p fx-m" style="--fc:25;--kc:0.06983;--fp:43;--kp:0.04975">Por que o Combo <br class="qc">funciona: <br class="qc"><br class="qp"><span class="y">o Método FARDA</span></h2>
       <p class="rv">Todo o material segue um método próprio, pensado pra quem vai vestir a farda. Cada letra é uma etapa do ciclo que leva à aprovação:</p>
     </div>
     <div class="track rv">
@@ -806,7 +822,7 @@
 <!-- 09 JORNADA -->
 <section id="b9">
   <div class="in narrow">
-    <h2 class="h2 center rv">Como vai ser a <span class="y">sua jornada</span> a partir de hoje</h2>
+    <h2 class="h2 center rv fx-c fx-p fx-m" style="--fc:25;--kc:0.06983;--fp:43;--kp:0.04906">Como vai ser <br class="qc">a <span class="y">sua jornada</span> <br class="qc"><br class="qp">a partir de hoje</h2>
     <div class="steps" id="steps">
       <div class="step rv"><span class="n">1</span><div><h3>Você recebe o acesso e abre o Edital Verticalizado.</h3><p>Vê o mapa completo do que cai na prova, e o que é prioridade. Some a sensação de “não sei por onde começar”.</p></div></div>
       <div class="step rv"><span class="n">2</span><div><h3>Segue o cronograma semanal e o Planner de 30 dias.</h3><p>Todo dia você já sabe o que estudar e vai marcando seus acertos. A rotina para de depender de força de vontade.</p></div></div>
@@ -820,7 +836,7 @@
 <!-- 10 ENTREGÁVEIS -->
 <section id="b10">
   <div class="in">
-    <h2 class="h2 center narrow rv">Tudo que você recebe no <span class="y">Combo da Aprovação PMPE 2027</span></h2>
+    <h2 class="h2 center narrow rv fx-c fx-p fx-m" style="--fc:25;--kc:0.06983;--fp:43;--kp:0.04231">Tudo que você <br class="qc">recebe no <br class="qp"><span class="y">Combo <br class="qc">da Aprovação <br class="qc">PMPE 2027</span></h2>
     <div class="prods">
       <article class="prod rv">
         <div class="img" aria-hidden="true"><div class="pbook" data-book="0"></div></div>
@@ -845,7 +861,7 @@
 <!-- 11 BÔNUS -->
 <section id="b11">
   <div class="in">
-    <h2 class="h2 center narrow rv">E ainda <span class="y">leve mais 5 bônus</span> para deixar sua preparação completa</h2>
+    <h2 class="h2 center narrow rv fx-c fx-p fx-m" style="--fc:25;--kc:0.06983;--fp:43;--kp:0.05313">E ainda <br class="qc"><span class="y">leve mais 5 bônus</span> <br class="qc"><br class="qp">para deixar <br class="qc">sua <br class="qp">preparação <br class="qc">completa</h2>
     <div class="bonus">
       <div class="brow rv"><div class="bimg hud"><span class="cn tl"></span><span class="cn br"></span><div class="bcov" data-flat="2"></div></div>
         <div class="btxt"><span class="chip">Bônus 1</span><h3>Edital Verticalizado</h3><p>O edital destrinchado assunto por assunto: o que estudar, o que revisar e o que treinar em cada tópico. Você nunca mais fica perdido sobre o próximo passo.</p></div></div>
@@ -884,7 +900,7 @@
 <!-- 13 RECAP -->
 <section id="b13">
   <div class="in narrow" style="max-width:960px">
-    <h2 class="h2 center rv">Recapitulando, com o Combo você:</h2>
+    <h2 class="h2 center rv fx-c fx-p fx-m" style="--fc:25;--kc:0.06983;--fp:43;--kp:0.07100">Recapitulando, <br class="qc"><br class="qp">com o Combo você:</h2>
     <ul class="recap">
       <li class="rv"><span class="vmark"><svg><use href="#i-check"/></svg></span>Estuda o edital inteiro organizado, sem caçar PDF perdido</li>
       <li class="rv"><span class="vmark"><svg><use href="#i-check"/></svg></span>Sabe exatamente o que estudar todo dia com planner e cronograma</li>
@@ -900,7 +916,7 @@
 <section id="oferta">
   <div class="glow" style="width:640px;height:520px;top:30%;left:50%;transform:translateX(-50%);background:rgba(246,193,17,.10)"></div>
   <div class="in">
-    <h2 class="h2 center rv">Tudo o que você leva <span class="y">no Combo</span></h2>
+    <h2 class="h2 center rv fx-c" style="--fc:25;--kc:0.06983">Tudo o que você <br class="qc">leva <span class="y">no Combo</span></h2>
     <div class="kitgrid rv" id="gridkit"></div>
     <div class="order rv">
       <div class="hazard"></div>
@@ -947,7 +963,7 @@
     </svg>
     <div class="gtxt rv">
       <span class="okchip"><svg><use href="#i-check"/></svg>GARANTIA INCONDICIONAL</span>
-      <h2 class="h2"><span class="y">O risco é meu,</span> não seu</h2>
+      <h2 class="h2 fx-c fx-p" style="--fc:25;--kc:0.06983;--fp:43;--kp:0.05297"><span class="y">O risco é meu,</span> <br class="qc"><br class="qp">não seu</h2>
       <p>Entra, abre as apostilas, testa os simulados, segue o cronograma.<br class="br-d"> Se em 14 dias você sentir que não é pra você, por qualquer motivo,<br class="br-d"> é só pedir o reembolso — devolvo 100% do seu dinheiro,<br class="br-d"> sem pergunta nenhuma, sem burocracia.</p>
       <p class="hl">Sem burocracia.</p>
       <div class="gpills"><span><svg><use href="#i-check"/></svg>14 dias de garantia</span><span><svg><use href="#i-check"/></svg>Reembolso total</span><span><svg><use href="#i-check"/></svg>Sem perguntas</span></div>
@@ -958,7 +974,7 @@
 <!-- 16 FAQ -->
 <section id="b16">
   <div class="in">
-    <h2 class="h2 center rv">Perguntas frequentes</h2>
+    <h2 class="h2 center rv fx-c" style="--fc:25;--kc:0.06983">Perguntas <br class="qc">frequentes</h2>
     <div class="faqs" id="faqs"></div>
   </div>
 </section>
@@ -966,7 +982,7 @@
 <!-- 17 FINAL -->
 <section id="b17" class="band">
   <div class="in band-stack narrow" style="max-width:860px">
-    <h2 class="h2 rv">A vaga vai existir. A pergunta é: você vai chegar <span class="marker" data-draw>preparado?<svg viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M178 14C140 2 60 4 22 20 -4 32 6 62 50 70c46 8 118 4 142-18 16-16-4-34-40-40"/></svg></span></h2>
+    <h2 class="h2 rv fx-c fx-p fx-m" style="--fc:25;--kc:0.06983;--fp:43;--kp:0.04540">A vaga vai existir. <br class="qc"><br class="qp">A pergunta é: <br class="qc"><br class="qp">você vai chegar <br class="qc"><span class="marker" data-draw>preparado?<svg viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M178 14C140 2 60 4 22 20 -4 32 6 62 50 70c46 8 118 4 142-18 16-16-4-34-40-40"/></svg></span></h2>
     <p class="rv">O edital da PMPE saiu: são 1.250 vagas para Soldado e a prova é no dia 21 de fevereiro de 2027. Milhares de candidatos vão disputar cada uma delas. A diferença entre quem passa e quem fica pra trás quase nunca é o esforço. É a direção.</p>
     <p class="rv">Você pode continuar estudando no escuro, juntando material solto e torcendo pra dar certo.</p>
     <p class="rv">Ou pode começar hoje com o mapa completo na mão, um método pra seguir e o edital inteiro organizado, por R$ 47, com 14 dias de garantia e risco zero.</p>
