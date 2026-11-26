@@ -441,10 +441,9 @@
   .shelf{display:flex;align-items:flex-end;justify-content:center;max-width:1060px;margin:44px auto 0;padding-inline:4%;position:relative}
   .shelf::before{content:"";position:absolute;left:8%;right:8%;bottom:4%;height:40%;background:radial-gradient(closest-side,rgba(246,193,17,.2),transparent);z-index:-1}
   .shelf .it{flex:none;margin-inline:-1.2%;position:relative}
-  .shelf .it:nth-child(1),.shelf .it:nth-child(7){width:12%}
-  .shelf .it:nth-child(2),.shelf .it:nth-child(6){width:14%}
-  .shelf .it:nth-child(3),.shelf .it:nth-child(5){width:16%}
-  .shelf .it:nth-child(4){width:20%}
+  .shelf .it:nth-child(1),.shelf .it:nth-child(6){width:13%}
+  .shelf .it:nth-child(2),.shelf .it:nth-child(5){width:15.5%}
+  .shelf .it:nth-child(3),.shelf .it:nth-child(4){width:19%}
   /* hero no celular: destaque + selo */
   .hero-m{display:none;position:relative;width:100%;max-width:420px;aspect-ratio:1/.95;margin:40px auto 0}
   .hero-m::before{content:"";position:absolute;left:5%;right:5%;bottom:0;height:45%;background:radial-gradient(closest-side,rgba(246,193,17,.22),transparent);z-index:-1}
@@ -468,7 +467,7 @@
   /* grade na oferta */
   .kitgrid{max-width:760px;margin:40px auto 0;display:grid;gap:22px}
   .kitgrid .main{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,3vw,32px);max-width:480px;margin:0 auto;width:100%}
-  .kitgrid .bon{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:clamp(10px,2vw,18px)}
+  .kitgrid .bon{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(10px,2vw,18px)}
   .kitgrid .cv{box-shadow:0 26px 44px -22px #000}
   .kitgrid .sep{display:flex;align-items:center;gap:14px;font:600 11px/1 var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--y-300)}
   .kitgrid .sep::before,.kitgrid .sep::after{content:"";flex:1;height:1px;background:var(--y-a30)}
@@ -482,7 +481,7 @@
     .shelf{flex-wrap:wrap;gap:14px 0;padding-inline:0}
     .shelf .it{width:30%!important;margin-inline:1.5%}
     .kitgrid .bon{display:flex;flex-wrap:wrap;justify-content:center;gap:16px 12px}
-    .kitgrid .bon > div{width:calc((100% - 24px) / 3)}
+    .kitgrid .bon > div{width:calc((100% - 12px) / 2)}
     .bcov{width:70%}
   }
 
@@ -648,8 +647,8 @@
       <p class="lead">O Combo da Aprovação PMPE 2027 reúne 5 apostilas do edital completo, 5 simulados no padrão Instituto AOCP com gabarito comentado e o passo a passo para você saber exatamente o que estudar todo dia, até o nome sair na lista de aprovados.</p>
       <a class="btn" href="#oferta" data-cta>Quero estudar com direção</a>
     </div>
-    <div class="shelf rv" id="shelf" role="img" aria-label="As 7 capas do Combo: Apostilas do Edital Completo, Simulados Padrão AOCP e os 5 bônus"></div>
-    <div class="hero-m rv" id="heroM" role="img" aria-label="Apostilas do Edital Completo em destaque, com Simulados Padrão AOCP e mais 5 bônus"></div>
+    <div class="shelf rv" id="shelf" role="img" aria-label="As 6 capas do Combo: Apostilas do Edital Completo, Simulados Padrão AOCP e os 4 bônus"></div>
+    <div class="hero-m rv" id="heroM" role="img" aria-label="Apostilas do Edital Completo em destaque, com Simulados Padrão AOCP e mais 4 bônus"></div>
   </div>
 </section>
 
@@ -755,7 +754,7 @@
       <div class="cmp-row" role="row"><div role="cell"><span class="xmark"><svg><use href="#i-x"/></svg></span>Junta PDF de tudo quanto é canto e não termina nenhum</div><div role="cell"><span class="vmark"><svg><use href="#i-check"/></svg></span>Edital inteiro organizado em 5 apostilas, na sequência certa</div></div>
       <div class="cmp-row" role="row"><div role="cell"><span class="xmark"><svg><use href="#i-x"/></svg></span>Estuda muito, mas não sabe se está evoluindo</div><div role="cell"><span class="vmark"><svg><use href="#i-check"/></svg></span>Simulados no padrão AOCP mostram seu nível real a cada rodada</div></div>
       <div class="cmp-row" role="row"><div role="cell"><span class="xmark"><svg><use href="#i-x"/></svg></span>Não sabe o que cai e nem por onde começar</div><div role="cell"><span class="vmark"><svg><use href="#i-check"/></svg></span>Edital verticalizado aponta a prioridade de cada assunto</div></div>
-      <div class="cmp-row" role="row"><div role="cell"><span class="xmark"><svg><use href="#i-x"/></svg></span>Estuda sem rotina, para e recomeça toda semana</div><div role="cell"><span class="vmark"><svg><use href="#i-check"/></svg></span>Planner de 30 dias e cronograma semanal te puxam todo dia</div></div>
+      <div class="cmp-row" role="row"><div role="cell"><span class="xmark"><svg><use href="#i-x"/></svg></span>Estuda sem rotina, para e recomeça toda semana</div><div role="cell"><span class="vmark"><svg><use href="#i-check"/></svg></span>Cronograma semanal já montado te puxa todo dia</div></div>
       <div class="cmp-row" role="row"><div role="cell"><span class="xmark"><svg><use href="#i-x"/></svg></span>Descobre o que errou só na hora da prova</div><div role="cell"><span class="vmark"><svg><use href="#i-check"/></svg></span>Gabarito comentado corrige seu raciocínio na mesma hora</div></div>
     </div>
   </div>
@@ -825,7 +824,7 @@
     <h2 class="h2 center rv fx-c fx-p fx-m" style="--fc:25;--kc:0.06983;--fp:43;--kp:0.04906">Como vai ser <br class="qc">a <span class="y">sua jornada</span> <br class="qc"><br class="qp">a partir de hoje</h2>
     <div class="steps" id="steps">
       <div class="step rv"><span class="n">1</span><div><h3>Você recebe o acesso e abre o Edital Verticalizado.</h3><p>Vê o mapa completo do que cai na prova, e o que é prioridade. Some a sensação de “não sei por onde começar”.</p></div></div>
-      <div class="step rv"><span class="n">2</span><div><h3>Segue o cronograma semanal e o Planner de 30 dias.</h3><p>Todo dia você já sabe o que estudar e vai marcando seus acertos. A rotina para de depender de força de vontade.</p></div></div>
+      <div class="step rv"><span class="n">2</span><div><h3>Segue o cronograma semanal.</h3><p>Todo dia você já sabe o que estudar, sem perder tempo decidindo. A rotina para de depender de força de vontade.</p></div></div>
       <div class="step rv"><span class="n">3</span><div><h3>Estuda pelas 5 apostilas completas.</h3><p>Teoria direta ao ponto, com exemplos no contexto da PMPE. Você aprende de um jeito que fica.</p></div></div>
       <div class="step rv"><span class="n">4</span><div><h3>Faz os 5 simulados no padrão AOCP e corrige com o gabarito comentado.</h3><p>Descobre exatamente onde está seu nível e o que ajustar, semanas antes da prova, não em cima dela.</p></div></div>
       <div class="step rv"><span class="n">5</span><div><h3>Repete o ciclo FARDA até o dia da prova.</h3><p>Chega no exame com preparo, rotina e confiança, não na base do “torcer pra cair o que eu estudei”.</p></div></div>
@@ -861,18 +860,16 @@
 <!-- 11 BÔNUS -->
 <section id="b11">
   <div class="in">
-    <h2 class="h2 center narrow rv fx-c fx-p fx-m" style="--fc:25;--kc:0.06983;--fp:43;--kp:0.05313">E ainda <br class="qc"><span class="y">leve mais 5 bônus</span> <br class="qc"><br class="qp">para deixar <br class="qc">sua <br class="qp">preparação <br class="qc">completa</h2>
+    <h2 class="h2 center narrow rv fx-c fx-p fx-m" style="--fc:25;--kc:0.06983;--fp:43;--kp:0.05313">E ainda <br class="qc"><span class="y">leve mais 4 bônus</span> <br class="qc"><br class="qp">para deixar <br class="qc">sua <br class="qp">preparação <br class="qc">completa</h2>
     <div class="bonus">
       <div class="brow rv"><div class="bimg hud"><span class="cn tl"></span><span class="cn br"></span><div class="bcov" data-flat="2"></div></div>
         <div class="btxt"><span class="chip">Bônus 1</span><h3>Edital Verticalizado</h3><p>O edital destrinchado assunto por assunto: o que estudar, o que revisar e o que treinar em cada tópico. Você nunca mais fica perdido sobre o próximo passo.</p></div></div>
       <div class="brow flip rv"><div class="bimg hud"><span class="cn tr"></span><span class="cn bl"></span><div class="bcov" data-flat="3"></div></div>
-        <div class="btxt"><span class="chip">Bônus 2</span><h3>Planner de 30 Dias</h3><p>Acompanhamento diário dos seus estudos e dos seus acertos. Você enxerga sua evolução preto no branco e mantém a constância que aprova.</p></div></div>
+        <div class="btxt"><span class="chip">Bônus 2</span><h3>Planejamento de Estudos</h3><p>Sua semana toda montada: o que estudar em cada dia, sem precisar decidir nada no cansaço. É só abrir e seguir.</p></div></div>
       <div class="brow rv"><div class="bimg hud"><span class="cn tl"></span><span class="cn br"></span><div class="bcov" data-flat="4"></div></div>
-        <div class="btxt"><span class="chip">Bônus 3</span><h3>Planejamento de Estudos</h3><p>Sua semana toda montada: o que estudar em cada dia, sem precisar decidir nada no cansaço. É só abrir e seguir.</p></div></div>
+        <div class="btxt"><span class="chip">Bônus 3</span><h3>Prompts da Aprovação</h3><p>Comandos prontos pra usar a IA a seu favor nos estudos: é só copiar, colar e aprender mais rápido.</p></div></div>
       <div class="brow flip rv"><div class="bimg hud"><span class="cn tr"></span><span class="cn bl"></span><div class="bcov" data-flat="5"></div></div>
-        <div class="btxt"><span class="chip">Bônus 4</span><h3>Prompts da Aprovação</h3><p>Comandos prontos pra usar a IA a seu favor nos estudos: é só copiar, colar e aprender mais rápido.</p></div></div>
-      <div class="brow rv"><div class="bimg hud"><span class="cn tl"></span><span class="cn br"></span><div class="bcov" data-flat="6"></div></div>
-        <div class="btxt"><span class="chip">Bônus 5</span><h3>Plano de Treino para o TAF</h3><p>3 planos por nível (iniciante ao avançado) com os índices oficiais do edital da PMPE (barra fixa, salto em distância, natação 50 m, abdominal remador e corrida de 2.400 m) e progressão semana a semana até você passar no teste físico.</p></div></div>
+        <div class="btxt"><span class="chip">Bônus 4</span><h3>Plano de Treino para o TAF</h3><p>3 planos por nível (iniciante ao avançado) com os índices oficiais do edital da PMPE (barra fixa, salto em distância, natação 50 m, abdominal remador e corrida de 2.400 m) e progressão semana a semana até você passar no teste físico.</p></div></div>
     </div>
   </div>
 </section>
@@ -903,7 +900,7 @@
     <h2 class="h2 center rv fx-c fx-p fx-m" style="--fc:25;--kc:0.06983;--fp:43;--kp:0.07100">Recapitulando, <br class="qc"><br class="qp">com o Combo você:</h2>
     <ul class="recap">
       <li class="rv"><span class="vmark"><svg><use href="#i-check"/></svg></span>Estuda o edital inteiro organizado, sem caçar PDF perdido</li>
-      <li class="rv"><span class="vmark"><svg><use href="#i-check"/></svg></span>Sabe exatamente o que estudar todo dia com planner e cronograma</li>
+      <li class="rv"><span class="vmark"><svg><use href="#i-check"/></svg></span>Sabe exatamente o que estudar todo dia com o cronograma semanal</li>
       <li class="rv"><span class="vmark"><svg><use href="#i-check"/></svg></span>Mede seu nível real com simulados no padrão AOCP</li>
       <li class="rv"><span class="vmark"><svg><use href="#i-check"/></svg></span>Aprende com o gabarito comentado em vez de só ver o “certo/errado”</li>
       <li class="rv"><span class="vmark"><svg><use href="#i-check"/></svg></span>Segue um método próprio (FARDA) em vez de estudar no escuro</li>
@@ -924,11 +921,10 @@
         <div class="line">5 Apostilas Completas<s>R$ 57,00</s></div>
         <div class="line">5 Simulados AOCP comentados<s>R$ 47,00</s></div>
         <div class="line">Bônus 1 - Edital Verticalizado<s>R$ 37,00</s></div>
-        <div class="line">Bônus 2 - Planner de 30 dias<s>R$ 17,00</s></div>
-        <div class="line">Bônus 3 - Planejamento de Estudos<s>R$ 17,00</s></div>
-        <div class="line">Bônus 4 - Prompts da Aprovação<s>R$ 9,00</s></div>
-        <div class="line">Bônus 5 - Plano de treino para o TAF<s>R$ 37,00</s></div>
-        <div class="line total">Valor real do pacote:<s>R$ 221,00</s></div>
+        <div class="line">Bônus 2 - Planejamento de Estudos<s>R$ 17,00</s></div>
+        <div class="line">Bônus 3 - Prompts da Aprovação<s>R$ 9,00</s></div>
+        <div class="line">Bônus 4 - Plano de treino para o TAF<s>R$ 37,00</s></div>
+        <div class="line total">Valor real do pacote:<s>R$ 204,00</s></div>
       </div>
       <div class="pbox">
         <span class="lead2">Hoje você leva tudo por apenas:</span>
@@ -1060,14 +1056,13 @@
     {n:'Produto 2',name:'Simulados Padrão AOCP',ts:'10.5cqw',t2:'8.4cqw',tag:'Simulados · 5 volumes',ttl:'Simulados<br><span class="y">Padrão AOCP</span>',sub:'Com gabarito comentado',
      art:`<div class="duo">${ART.sheet}<ul class="lst">${['Padrão oficial AOCP','Questões inéditas','Soluções detalhadas'].map(t=>`<li><i>${ck}</i>${t}</li>`).join('')}</ul></div>`,spine:'Simulados Padrão AOCP'},
     {n:'Bônus 1',name:'Edital Verticalizado',ts:'10.5cqw',t2:'7.55cqw',tag:'Bônus 01',ttl:'Edital<br><span class="y">Verticalizado</span>',sub:'Teoria • Revisão • Questões',art:ART.doc,spine:'Edital Verticalizado'},
-    {n:'Bônus 2',name:'Planner de 30 Dias',ts:'10.5cqw',t2:'8.95cqw',tag:'Bônus 02',spiral:true,ttl:'Planner de<span class="big">30 dias</span>',sub:'',art:ART.grid30,spine:'Planner de 30 Dias'},
-    {n:'Bônus 3',name:'Planejamento de Estudos',ts:'10cqw',t2:'7.6cqw',tag:'Bônus 03',ttl:'Planejamento<br><span class="y">de Estudos</span>',sub:'Cronograma semanal',art:ART.week,spine:'Planejamento de Estudos'},
-    {n:'Bônus 4',name:'Prompts da Aprovação',ts:'10.5cqw',t2:'9.3cqw',tag:'Bônus 04',ttl:'Prompts da<br><span class="y">Aprovação</span>',sub:'Estude com IA sem se perder',
+    {n:'Bônus 2',name:'Planejamento de Estudos',ts:'10cqw',t2:'7.6cqw',tag:'Bônus 02',ttl:'Planejamento<br><span class="y">de Estudos</span>',sub:'Cronograma semanal',art:ART.week,spine:'Planejamento de Estudos'},
+    {n:'Bônus 3',name:'Prompts da Aprovação',ts:'10.5cqw',t2:'9.3cqw',tag:'Bônus 03',ttl:'Prompts da<br><span class="y">Aprovação</span>',sub:'Estude com IA sem se perder',
      art:`<div class="chat"><div class="bar"><i></i><i></i><i></i></div>
        <div class="crow"><span><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>Plano de Estudos</div>
        <div class="crow"><span><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></span>Revisão</div>
        <div class="crow"><span><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.7M12 16h.01"/></svg></span>Resolução de Dúvidas</div></div>`,spine:'Prompts da Aprovação'},
-    {n:'Bônus 5',name:'Plano de Treino para o TAF',ts:'9.4cqw',t2:'6.85cqw',tag:'Bônus 05 · 3 níveis',ttl:'Plano de Treino<br>para o <span class="y">TAF</span>',sub:'',
+    {n:'Bônus 4',name:'Plano de Treino para o TAF',ts:'9.4cqw',t2:'6.85cqw',tag:'Bônus 04 · 3 níveis',ttl:'Plano de Treino<br>para o <span class="y">TAF</span>',sub:'',
      art:`<div style="display:grid;gap:1cqw;width:100%;height:100%;grid-template-rows:auto minmax(0,1fr) auto"><div class="lv"><span>Iniciante</span><span>Intermediário</span><span>Avançado</span></div>${ART.chart}<p class="note">Evolução semana a semana para conquistar os índices do edital.</p></div>`,spine:'Plano de Treino TAF'}
   ];
   const cover = p => `<div class="cv cv2${p.spiral?' spiral':''}" role="img" aria-label="Capa: ${p.name}"><div class="cv-in" aria-hidden="true">
@@ -1079,12 +1074,12 @@
   // topo: mesma logo horizontal do rodapé
   document.getElementById('toplogo').appendChild(document.querySelector('footer .logo-h').cloneNode(true));
   // hero: vitrine
-  const shelfOrder=[3,2,1,0,5,4,6], shelfRy=[30,24,16,0,-16,-24,-30];
-  document.getElementById('shelf').innerHTML = shelfOrder.map((ix,i)=>`<div class="it" style="z-index:${10-Math.abs(i-3)}">${book(P[ix],shelfRy[i])}</div>`).join('');
+  const shelfOrder=[4,2,0,1,3,5], shelfRy=[28,20,8,-8,-20,-28];
+  document.getElementById('shelf').innerHTML = shelfOrder.map((ix,i)=>`<div class="it" style="z-index:${10-Math.floor(Math.abs(i-2.5))}">${book(P[ix],shelfRy[i])}</div>`).join('');
   // hero no celular: destaque + selo
   document.getElementById('heroM').innerHTML =
     `<div class="back">${book(P[1],26)}</div><div class="back2">${book(P[2],-26)}</div><div class="front">${book(P[0],0)}</div>`+
-    `<div class="seal"><div class="mini">${['i-list','i-cal','i-clock','i-spark','i-run'].map(id=>`<span><svg><use href="#${id}"/></svg></span>`).join('')}</div><div style="display:grid;gap:3px;text-align:left"><b>+ 5 bônus</b><span>inclusos no combo</span></div></div>`;
+    `<div class="seal"><div class="mini">${['i-list','i-cal','i-spark','i-run'].map(id=>`<span><svg><use href="#${id}"/></svg></span>`).join('')}</div><div style="display:grid;gap:3px;text-align:left"><b>+ 4 bônus</b><span>inclusos no combo</span></div></div>`;
   // bloco 10: livros 3D
   document.querySelectorAll('[data-book]').forEach(el => el.innerHTML = book(P[+el.dataset.book], 20));
   // bloco 11: capas planas dos bônus
@@ -1092,7 +1087,7 @@
   // oferta: grade
   document.getElementById('gridkit').innerHTML =
     `<div class="sep">Produtos</div><div class="main">${[0,1].map(i=>`<div>${cover(P[i])}<div class="kl"><b>${P[i].n}</b> · ${P[i].name}</div></div>`).join('')}</div>`+
-    `<div class="sep">+ 5 bônus</div><div class="bon">${[2,3,4,5,6].map(i=>`<div>${cover(P[i])}<div class="kl"><b>${P[i].n}</b></div></div>`).join('')}</div>`;
+    `<div class="sep">+ 4 bônus</div><div class="bon">${[2,3,4,5].map(i=>`<div>${cover(P[i])}<div class="kl"><b>${P[i].n}</b></div></div>`).join('')}</div>`;
 
 
   document.documentElement.classList.add('js');
